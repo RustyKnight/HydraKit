@@ -18,6 +18,13 @@
 		123667851F746F7600D0F968 /* SessionHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123667841F746F7600D0F968 /* SessionHelperTest.swift */; };
 		123667861F746F7900D0F968 /* SessionHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123667841F746F7600D0F968 /* SessionHelperTest.swift */; };
 		123667871F746F7900D0F968 /* SessionHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123667841F746F7600D0F968 /* SessionHelperTest.swift */; };
+		123667891F74717500D0F968 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123667881F74717500D0F968 /* Utilities.swift */; };
+		1236678B1F7471A100D0F968 /* TestAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1236678A1F7471A100D0F968 /* TestAfter.swift */; };
+		1236678C1F74720500D0F968 /* TestAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1236678A1F7471A100D0F968 /* TestAfter.swift */; };
+		1236678D1F74720500D0F968 /* TestAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1236678A1F7471A100D0F968 /* TestAfter.swift */; };
+		1236678E1F74721600D0F968 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123667881F74717500D0F968 /* Utilities.swift */; };
+		1236678F1F74721700D0F968 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123667881F74717500D0F968 /* Utilities.swift */; };
+		123667901F74721700D0F968 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123667881F74717500D0F968 /* Utilities.swift */; };
 		52D6D9871BEFF229002C0205 /* HydraKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* HydraKit.framework */; };
 		DD7502881C68FEDE006590AF /* HydraKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* HydraKit.framework */; };
 		DD7502921C690C7A006590AF /* HydraKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* HydraKit.framework */; };
@@ -54,6 +61,8 @@
 		123667801F746EE900D0F968 /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/watchOS/Hydra.framework; sourceTree = "<group>"; };
 		123667821F746EEF00D0F968 /* Hydra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hydra.framework; path = Carthage/Build/tvOS/Hydra.framework; sourceTree = "<group>"; };
 		123667841F746F7600D0F968 /* SessionHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelperTest.swift; sourceTree = "<group>"; };
+		123667881F74717500D0F968 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1236678A1F7471A100D0F968 /* TestAfter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAfter.swift; sourceTree = "<group>"; };
 		52D6D97C1BEFF229002C0205 /* HydraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HydraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* HydraKit-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HydraKit-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9E21BEFFF6E002C0205 /* HydraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HydraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				123667761F746EBD00D0F968 /* URLSessionHelper.swift */,
+				123667881F74717500D0F968 /* Utilities.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -182,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				123667841F746F7600D0F968 /* SessionHelperTest.swift */,
+				1236678A1F7471A100D0F968 /* TestAfter.swift */,
 			);
 			name = Tests;
 			path = Tests/HydraKitTests;
@@ -399,13 +410,13 @@
 					52D6DA0E1BF000BD002C0205 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = YWXH886EY3;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					DD7502791C68FCFC006590AF = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = YWXH886EY3;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					DD75028C1C690C7A006590AF = {
@@ -495,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123667891F74717500D0F968 /* Utilities.swift in Sources */,
 				123667771F746EBD00D0F968 /* URLSessionHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1236678B1F7471A100D0F968 /* TestAfter.swift in Sources */,
 				123667851F746F7600D0F968 /* SessionHelperTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1236678F1F74721700D0F968 /* Utilities.swift in Sources */,
 				123667791F746ED300D0F968 /* URLSessionHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123667901F74721700D0F968 /* Utilities.swift in Sources */,
 				1236677A1F746ED300D0F968 /* URLSessionHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1236678E1F74721600D0F968 /* Utilities.swift in Sources */,
 				123667781F746ED200D0F968 /* URLSessionHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1236678C1F74720500D0F968 /* TestAfter.swift in Sources */,
 				123667861F746F7900D0F968 /* SessionHelperTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,6 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1236678D1F74720500D0F968 /* TestAfter.swift in Sources */,
 				123667871F746F7900D0F968 /* SessionHelperTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -912,7 +930,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -943,7 +962,8 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -962,7 +982,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -982,7 +1003,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
