@@ -34,16 +34,22 @@ open class URLSessionHelper {
 	fileprivate init() {
 	}
 	
-	public func get(in context: Context? = nil, from url: URL) -> Promise<Data> {
+	public func get(in context: Context? = nil, from url: URL, headers: [String: String]? = nil) -> Promise<Data> {
 		return Promise<Data>(in: context, token: nil) { (fulfill, fail, status) in
 			let session = URLSession(configuration: self.configuration,
 			                         delegate: URLSessionHelperDelegate(fulfill: fulfill, fail: fail),
 			                         delegateQueue: self.queue)
 			
-			let request = URLRequest(url: url,
+			var request = URLRequest(url: url,
 			                         cachePolicy: self.cachePolicy,
 			                         timeoutInterval: self.timeoutInterval)
-			
+			request.httpMethod = "GET"
+			if let headers = headers {
+				for entry in headers {
+					request.addValue(entry.value, forHTTPHeaderField: entry.key)
+				}
+			}
+
 			let task: URLSessionDataTask = session.dataTask(with: request)
 			task.resume()
 		}
